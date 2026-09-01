@@ -5,7 +5,7 @@ package.domain = com.konfigaar.app
 source.dir =.
 source.include_exts = py,png
 version = 0.1
-requirements = python3,kivy
+requirements = python3==3.10.13,kivy==2.3.0
 orientation = portrait
 fullscreen = 0
 
