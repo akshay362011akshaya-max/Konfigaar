@@ -5,7 +5,6 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v4
-
       - name: Build APK with Docker
         uses: ArtemSBulgakov/buildozer-action@v1
         id: buildozer
@@ -13,7 +12,6 @@ jobs:
           workdir:.
           command: buildozer android debug
           buildozer_version: master
-
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
